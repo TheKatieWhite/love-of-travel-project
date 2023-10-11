@@ -53,6 +53,44 @@ header a {
   border-radius: 3px;
 }
 
+.grid {
+  display: grid;
+  padding: 15px;
+  place-items: center;
+}
+
+main {
+  background-color: white;
+}
+
+section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+h3 {
+  font-family: var(--heading-font-family);
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+h4 {
+  font-family: var(--heading-font-family);
+  font-weight: 200;
+  margin: 0;
+  font-size: 14px;
+}
+
+.author {
+  color: grey;
+}
+
 .byline {
   margin-top: 30px;
   text-align: center;
@@ -67,7 +105,6 @@ footer {
   background-size: cover;
   color: white;
   aspect-ratio: 21 / 6;
-  padding: 15px;
 }
 
 footer h3 {
@@ -89,8 +126,7 @@ footer li {
   padding: 0;
 }
 
-.grid {
-  display: grid;
+.grid-footer {
   grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 20px;
 }
@@ -100,9 +136,7 @@ footer a {
   text-decoration: none;
 }
 
-section {
-  max-width: 1000px;
-}
+
 
 
 
@@ -117,5 +151,16 @@ section {
   h2 {
     font-size: 35px;
   }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+  }
+
+  section {
+    padding: 30px;
+  }
+
+
 }
 
