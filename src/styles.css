@@ -214,7 +214,7 @@ footer a {
   text-decoration: none;
 }
 
-.glimpse {
+.embed-headline {
   color:#097CA4;
   font-family: var(--heading-font-family);
   font-size: 60px;
@@ -261,7 +261,7 @@ hr {
     font-size: 25px;
   }
 
-  .glimpse {
+  .embed-headline {
     font-size: 30px;
     text-align: center;
     padding: 5px
@@ -269,7 +269,7 @@ hr {
 
   .video {
     display: flex;
-  justify-content: center;
+    justify-content: center;
   }
 
   .grid {
