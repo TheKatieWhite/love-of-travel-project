@@ -56,7 +56,6 @@ header a {
 .grid {
   display: grid;
   padding: 15px;
-  place-items: center;
 }
 
 main {
@@ -64,15 +63,23 @@ main {
 }
 
 section {
-  max-width: 1000px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
 }
 
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
 }
+
+.value {
+  width: 450px;
+}
+
+.why {
+  font-size: 20px;
+}
+
 
 h3 {
   font-family: var(--heading-font-family);
@@ -84,11 +91,70 @@ h4 {
   font-family: var(--heading-font-family);
   font-weight: 200;
   margin: 0;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .author {
   color: grey;
+}
+
+.secondary {
+  background-color: azure;
+  padding: 0px;
+  
+}
+
+.card {
+  background-color: white;
+  margin: 5px;
+  padding: 25px;
+  border-color: #097CA4;
+  border-style: solid;
+  max-width: 300px;
+}
+
+
+
+.card-quote {
+  text-align: center;
+}
+
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+h5 {
+  font-family: var(--heading-font-family);
+  text-transform: uppercase;
+  font-size: 50px;
+  text-align: center;
+  margin: 0 auto;
+  color:#097CA4;
+  padding-top: 20px;
+}
+
+h6 {
+  font-family: var(--heading-font-family);
+  font-size: 16px;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.card-quote {
+  color: #097CA4;
+}
+
+.btn {
+  display: block;
+  color: white;
+  background-color: #097CA4;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  margin: 15px;
+  border-radius: 4px;
 }
 
 .byline {
