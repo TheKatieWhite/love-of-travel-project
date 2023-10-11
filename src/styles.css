@@ -77,7 +77,8 @@ section {
 }
 
 .why {
-  font-size: 20px;
+  font-size: 19px;
+  font-weight: 300;
 }
 
 
@@ -89,7 +90,7 @@ h3 {
 
 h4 {
   font-family: var(--heading-font-family);
-  font-weight: 200;
+  font-weight: 400;
   margin: 0;
   font-size: 18px;
 }
@@ -101,7 +102,17 @@ h4 {
 .secondary {
   background-color: azure;
   padding: 0px;
+  max-width: 1200px;
   
+}
+
+.why-travel {
+  color: #097CA4;
+}
+
+.grid-photo-embed {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .card {
@@ -114,13 +125,14 @@ h4 {
 }
 
 
-
 .card-quote {
   text-align: center;
+  color: #097CA4;
 }
 
 .grid-3-columns {
   grid-template-columns: 1fr 1fr 1fr;
+  max-width: 100%;
 }
 
 
@@ -142,10 +154,6 @@ h6 {
   margin-top: 10px;
 }
 
-.card-quote {
-  color: #097CA4;
-}
-
 .btn {
   display: block;
   color: white;
@@ -161,7 +169,13 @@ h6 {
   margin-top: 30px;
   text-align: center;
   color: grey;
+  background-color: lightblue;
   font-size: 12px;
+  padding: 20px;
+}
+
+.kw-logo {
+  display: none;
 }
 
 footer {
@@ -170,17 +184,15 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  aspect-ratio: 21 / 6;
+  aspect-ratio: 16 / 6;
 }
 
 footer h3 {
   font-family: var(--heading-font-family);
+  margin-top: 50px;
   
 }
 
-footer p {
-  
-}
 
 footer ul {
   padding: 0;
@@ -193,7 +205,7 @@ footer li {
 }
 
 .grid-footer {
-  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
 }
 
@@ -202,20 +214,62 @@ footer a {
   text-decoration: none;
 }
 
+.glimpse {
+  color:#097CA4;
+  font-family: var(--heading-font-family);
+  font-size: 60px;
+  font-weight: 900;
+  padding: 60px 0;
+}
 
+.video {
+  margin: 0 auto;
+}
 
+.grid-embed {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
 
+hr {
+  display: none;
+}
 
 @media (max-width: 960px) {
+  
   header {
     padding: 60px 0;
   }
+
   h1 {
     font-size: 20px;
     padding-top: 2px;
   }
   h2 {
     font-size: 35px;
+  }
+
+  .value {
+    display: none;
+  }
+
+  .why {
+    font-size: 16px;
+  }
+
+  h5 {
+    font-size: 25px;
+  }
+
+  .glimpse {
+    font-size: 30px;
+    text-align: center;
+    padding: 5px
+  }
+
+  .video {
+    display: flex;
+  justify-content: center;
   }
 
   .grid {
@@ -227,6 +281,23 @@ footer a {
     padding: 30px;
   }
 
+  footer h3 {
+    margin-top: 5px;
+  }
+  
+  hr {
+    display: block;
+  }
 
+  .byline {
+    line-height: 1.5;
+  }
+
+  .kw-logo {
+    display: block;
+    margin: 0 auto;
+    padding: 10px
+   
+  }
 }
 
